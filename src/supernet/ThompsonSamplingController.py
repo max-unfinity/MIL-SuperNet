@@ -9,7 +9,7 @@ import itertools
 
 class ThompsonSamplingController(nn.Module)
     '''В данный момент просто собирает статистику обучения каждой подсети, чтобы выбрать лучшую.
-    Про сам метод ThompsonSampling, я написал ниже, в разделе Further experimetns'''
+    Про сам метод ThompsonSampling, я написал в основном ноутбке, в разделе further experimetns'''
     def __init__(self, supernet, parallel_limit=None, is_minimize_score=True)
         # TODO parallel_limit (while training all choices are possible, but for top sampling are not)
         super().__init__()
